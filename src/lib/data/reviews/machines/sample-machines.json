@@ -1,0 +1,261 @@
+[
+	{
+		"id": "1",
+		"slug": "gamma-progression-ii",
+		"name": "Progression II",
+		"brand": "Gamma",
+		"type": "drop-weight",
+		"price": 299.99,
+		"specifications": {
+			"mountingSystem": "6-point mounting",
+			"tensionRange": "15-90 lbs",
+			"weight": "45 lbs",
+			"dimensions": "24\" x 18\" x 12\"",
+			"warranty": "1 year"
+		},
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE",
+			"tennisWarehouse": "https://tennis-warehouse.com/example"
+		},
+		"content": {
+			"summary": "The Gamma Progression II is an excellent entry-level drop-weight stringing machine perfect for home stringers.",
+			"pros": [
+				"Affordable price point",
+				"Easy to use",
+				"Accurate tension",
+				"Solid construction",
+				"Great for beginners"
+			],
+			"cons": [
+				"Slower than crank or electronic",
+				"Requires manual adjustment",
+				"Limited features compared to higher-end models"
+			],
+			"fullReview": "The Gamma Progression II is one of the best entry-level stringing machines on the market. It uses a drop-weight tensioning system that's accurate and reliable once you get the hang of it. The 6-point mounting system provides good racquet support and prevents distortion. While it's slower than crank or electronic machines, it's perfect for home stringers who want accuracy without breaking the bank. The build quality is solid, and it should last many years with proper care."
+		},
+		"seo": {
+			"metaDescription": "Gamma Progression II drop-weight stringing machine review. Perfect for beginners. Learn about features, accuracy, and value.",
+			"keywords": ["gamma progression ii", "drop weight stringing machine", "beginner stringing machine", "home stringer"]
+		},
+		"images": {
+			"featured": "/images/machines/gamma-progression-ii.jpg"
+		},
+		"publishedAt": "2024-02-01T00:00:00Z"
+	},
+	{
+		"id": "2",
+		"slug": "alpha-revo-4000",
+		"name": "Revo 4000",
+		"brand": "Alpha",
+		"type": "crank",
+		"price": 599.99,
+		"specifications": {
+			"mountingSystem": "6-point mounting",
+			"tensionRange": "20-80 lbs",
+			"weight": "65 lbs",
+			"dimensions": "28\" x 20\" x 14\"",
+			"warranty": "2 years"
+		},
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE2",
+			"tennisWarehouse": "https://tennis-warehouse.com/example2"
+		},
+		"content": {
+			"summary": "The Alpha Revo 4000 is a professional-grade crank machine offering speed and accuracy for serious stringers.",
+			"pros": [
+				"Fast stringing",
+				"Very accurate",
+				"Professional quality",
+				"Durable construction",
+				"Good value for features"
+			],
+			"cons": [
+				"Higher price point",
+				"Heavier than drop-weight",
+				"Requires calibration"
+			],
+			"fullReview": "The Alpha Revo 4000 is a step up from entry-level machines, offering crank tensioning for faster stringing times. The machine is built like a tank and should last decades with proper maintenance. The crank system is accurate and consistent, making it popular with both home stringers and small pro shops. While more expensive than drop-weight machines, the speed and convenience make it worth the investment for frequent stringers."
+		},
+		"seo": {
+			"metaDescription": "Alpha Revo 4000 crank stringing machine review. Professional quality for serious stringers. Features, accuracy, and value analysis.",
+			"keywords": ["alpha revo 4000", "crank stringing machine", "professional stringing machine", "tennis stringer"]
+		},
+		"images": {
+			"featured": "/images/machines/alpha-revo-4000.jpg"
+		},
+		"publishedAt": "2024-02-05T00:00:00Z"
+	},
+	{
+		"id": "3",
+		"slug": "eagnas-delta",
+		"name": "Delta",
+		"brand": "Eagnas",
+		"type": "drop-weight",
+		"price": 249.99,
+		"specifications": {
+			"mountingSystem": "6-point mounting",
+			"tensionRange": "15-90 lbs",
+			"weight": "42 lbs",
+			"dimensions": "23\" x 17\" x 11\"",
+			"warranty": "1 year"
+		},
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE3",
+			"tennisWarehouse": "https://tennis-warehouse.com/example3"
+		},
+		"content": {
+			"summary": "The Eagnas Delta is a budget-friendly drop-weight machine that doesn't compromise on quality or accuracy.",
+			"pros": [
+				"Very affordable",
+				"Accurate tensioning",
+				"Lightweight and portable",
+				"Easy to use",
+				"Solid build quality"
+			],
+			"cons": [
+				"Slower than crank machines",
+				"Basic features only",
+				"Smaller mounting surface"
+			],
+			"fullReview": "The Eagnas Delta offers incredible value for money in the drop-weight category. Despite its low price, it provides accurate tensioning and solid construction that rivals more expensive machines. The 6-point mounting system ensures good racquet stability, and the drop-weight mechanism delivers consistent results once you learn the technique. This machine is perfect for home stringers who want quality without breaking the bank. The compact design makes it easier to store than larger machines, and it's light enough to move around when needed."
+		},
+		"seo": {
+			"metaDescription": "Eagnas Delta drop-weight stringing machine review. Budget-friendly quality with accurate tensioning for home stringers.",
+			"keywords": ["eagnas delta", "budget stringing machine", "drop weight machine", "affordable stringer"]
+		},
+		"images": {
+			"featured": "/images/machines/eagnas-delta.jpg"
+		},
+		"publishedAt": "2024-02-10T00:00:00Z"
+	},
+	{
+		"id": "4",
+		"slug": "true-tension-professional",
+		"name": "Professional",
+		"brand": "True Tension",
+		"type": "crank",
+		"price": 749.99,
+		"specifications": {
+			"mountingSystem": "6-point mounting",
+			"tensionRange": "10-90 lbs",
+			"weight": "70 lbs",
+			"dimensions": "30\" x 22\" x 15\"",
+			"warranty": "3 years"
+		},
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE4",
+			"tennisWarehouse": "https://tennis-warehouse.com/example4"
+		},
+		"content": {
+			"summary": "The True Tension Professional is a high-end crank machine designed for serious stringers and small pro shops.",
+			"pros": [
+				"Exceptional accuracy",
+				"Professional-grade construction",
+				"Extended tension range",
+				"Long warranty",
+				"Excellent customer support"
+			],
+			"cons": [
+				"Very expensive",
+				"Heavy and bulky",
+				"Requires regular maintenance"
+			],
+			"fullReview": "The True Tension Professional represents the pinnacle of crank machine technology. Built with aircraft-grade aluminum and precision components, this machine delivers professional-level accuracy and durability. The extended tension range accommodates all string types and player preferences, while the 6-point mounting system ensures perfect racquet alignment. Though expensive, this machine is an investment that will last decades with proper care. The 3-year warranty and excellent customer support from True Tension make it a favorite among serious stringers and small pro shops."
+		},
+		"seo": {
+			"metaDescription": "True Tension Professional crank stringing machine review. High-end accuracy and durability for serious stringers and pro shops.",
+			"keywords": ["true tension professional", "professional crank machine", "high-end stringing machine", "tennis stringer"]
+		},
+		"images": {
+			"featured": "/images/machines/true-tension-professional.jpg"
+		},
+		"publishedAt": "2024-02-15T00:00:00Z"
+	},
+	{
+		"id": "5",
+		"slug": "eagnas-fusion",
+		"name": "Fusion",
+		"brand": "Eagnas",
+		"type": "electronic",
+		"price": 1299.99,
+		"specifications": {
+			"mountingSystem": "6-point mounting with auto-leveling",
+			"tensionRange": "10-90 lbs",
+			"weight": "85 lbs",
+			"dimensions": "32\" x 24\" x 16\"",
+			"warranty": "2 years"
+		},
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE5",
+			"tennisWarehouse": "https://tennis-warehouse.com/example5"
+		},
+		"content": {
+			"summary": "The Eagnas Fusion is a professional electronic stringing machine with advanced features for high-volume stringing.",
+			"pros": [
+				"Lightning-fast stringing",
+				"Digital accuracy",
+				"Advanced features",
+				"Professional quality",
+				"Auto-leveling mounting"
+			],
+			"cons": [
+				"Premium price",
+				"Requires power source",
+				"Complex operation",
+				"Regular maintenance needed"
+			],
+			"fullReview": "The Eagnas Fusion brings professional stringing technology to the electronic category. With digital tension control accurate to within 0.1 lbs and auto-leveling mounting system, this machine delivers consistent results every time. The electronic motor provides lightning-fast stringing speeds, making it ideal for pro shops and high-volume stringers. Advanced features like pre-stretch, programmable tension patterns, and automatic knot tying set it apart from crank machines. While expensive, the Fusion offers professional-grade performance that justifies the investment for serious stringers."
+		},
+		"seo": {
+			"metaDescription": "Eagnas Fusion electronic stringing machine review. Professional-grade features and accuracy for high-volume tennis stringing.",
+			"keywords": ["eagnas fusion", "electronic stringing machine", "professional stringer", "digital tennis machine"]
+		},
+		"images": {
+			"featured": "/images/machines/eagnas-fusion.jpg"
+		},
+		"publishedAt": "2024-02-20T00:00:00Z"
+	},
+	{
+		"id": "6",
+		"slug": "klipper-usa-ultra",
+		"name": "Ultra",
+		"brand": "Klipper USA",
+		"type": "drop-weight",
+		"price": 349.99,
+		"specifications": {
+			"mountingSystem": "6-point mounting with turntable",
+			"tensionRange": "15-80 lbs",
+			"weight": "48 lbs",
+			"dimensions": "25\" x 19\" x 13\"",
+			"warranty": "2 years"
+		},
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE6",
+			"tennisWarehouse": "https://tennis-warehouse.com/example6"
+		},
+		"content": {
+			"summary": "The Klipper USA Ultra combines drop-weight accuracy with modern features for an enhanced stringing experience.",
+			"pros": [
+				"Excellent accuracy",
+				"Turntable mounting for easy access",
+				"Modern design",
+				"Good value",
+				"Easy to learn"
+			],
+			"cons": [
+				"Mid-range price",
+				"Still slower than crank machines",
+				"Turntable adds weight"
+			],
+			"fullReview": "The Klipper USA Ultra bridges the gap between basic drop-weight machines and more advanced options. The turntable mounting system makes it easier to access all areas of the racquet during stringing, while the drop-weight mechanism ensures accurate tensioning. This machine is particularly popular among stringers who want more features than basic models but don't need the speed of crank machines. The build quality is excellent, and the 2-year warranty provides peace of mind. It's a great choice for home stringers looking to upgrade from entry-level machines."
+		},
+		"seo": {
+			"metaDescription": "Klipper USA Ultra drop-weight stringing machine review. Modern features with accurate tensioning for serious home stringers.",
+			"keywords": ["klipper usa ultra", "drop weight machine", "turntable mounting", "home stringing"]
+		},
+		"images": {
+			"featured": "/images/machines/klipper-usa-ultra.jpg"
+		},
+		"publishedAt": "2024-02-25T00:00:00Z"
+	}
+]

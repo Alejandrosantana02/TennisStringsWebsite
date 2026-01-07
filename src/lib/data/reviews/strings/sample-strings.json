@@ -1,0 +1,361 @@
+[
+	{
+		"id": "1",
+		"slug": "babolat-rpm-blast",
+		"name": "RPM Blast",
+		"brand": "Babolat",
+		"type": "polyester",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 8,
+			"power": 6,
+			"spin": 9,
+			"durability": 9,
+			"comfort": 4,
+			"overall": 4
+		},
+		"price": 14.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE",
+			"tennisWarehouse": "https://tennis-warehouse.com/example"
+		},
+		"content": {
+			"summary": "Babolat RPM Blast is a high-performance polyester string designed for players seeking maximum spin and control.",
+			"pros": [
+				"Excellent spin potential",
+				"Great durability",
+				"Consistent playability",
+				"Good control"
+			],
+			"cons": [
+				"Low comfort level",
+				"Can be harsh on arm",
+				"Requires frequent restringing for best performance"
+			],
+			"fullReview": "Babolat RPM Blast has been a favorite among professional and advanced players for its exceptional spin generation. The octagonal shape of the string creates more bite on the ball, allowing for aggressive topspin shots. However, the stiffness rating means it's not ideal for players with arm issues. The string maintains tension well but loses playability after 10-15 hours of play."
+		},
+		"seo": {
+			"metaDescription": "Complete review of Babolat RPM Blast tennis string. Learn about spin potential, durability, comfort, and best tension recommendations.",
+			"keywords": ["babolat rpm blast", "polyester tennis string", "spin string", "tennis string review"]
+		},
+		"images": {
+			"featured": "/images/strings/babolat-rpm-blast.jpg"
+		},
+		"publishedAt": "2024-01-15T00:00:00Z"
+	},
+	{
+		"id": "2",
+		"slug": "wilson-nxt",
+		"name": "NXT",
+		"brand": "Wilson",
+		"type": "multifilament",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 3,
+			"power": 8,
+			"spin": 5,
+			"durability": 5,
+			"comfort": 9,
+			"overall": 4
+		},
+		"price": 19.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE2",
+			"tennisWarehouse": "https://tennis-warehouse.com/example2"
+		},
+		"content": {
+			"summary": "Wilson NXT is a premium multifilament string offering exceptional comfort and power for players seeking arm-friendly performance.",
+			"pros": [
+				"Excellent comfort",
+				"Great power",
+				"Arm-friendly",
+				"Good feel"
+			],
+			"cons": [
+				"Lower durability",
+				"Less spin potential",
+				"Higher price point"
+			],
+			"fullReview": "Wilson NXT is one of the most popular multifilament strings on the market, known for its exceptional comfort and power. It's an excellent choice for players with arm issues or those seeking a softer feel. The string provides good power and feel but lacks the spin potential of polyester strings. Durability is moderate, typically lasting 8-12 hours of play before breaking."
+		},
+		"seo": {
+			"metaDescription": "Wilson NXT multifilament string review. Perfect for players seeking comfort and power. Learn about tension, durability, and playability.",
+			"keywords": ["wilson nxt", "multifilament string", "comfort string", "arm-friendly string"]
+		},
+		"images": {
+			"featured": "/images/strings/wilson-nxt.jpg"
+		},
+		"publishedAt": "2024-01-20T00:00:00Z"
+	},
+	{
+		"id": "3",
+		"slug": "luxilon-al-power",
+		"name": "ALU Power",
+		"brand": "Luxilon",
+		"type": "polyester",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 7,
+			"power": 7,
+			"spin": 8,
+			"durability": 8,
+			"comfort": 6,
+			"overall": 5
+		},
+		"price": 16.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE3",
+			"tennisWarehouse": "https://tennis-warehouse.com/example3"
+		},
+		"content": {
+			"summary": "Luxilon ALU Power is a legendary polyester string used by many professional players for its excellent balance of power, control, and spin.",
+			"pros": [
+				"Professional-grade performance",
+				"Great balance of power and control",
+				"Excellent spin",
+				"Consistent playability"
+			],
+			"cons": [
+				"Premium price",
+				"Tension loss over time",
+				"Not the most comfortable"
+			],
+			"fullReview": "Luxilon ALU Power has been a staple on the professional tour for years. It offers an excellent balance of power, control, and spin that few strings can match. The string provides crisp feel and good ball pocketing. However, it does lose tension relatively quickly, so frequent restringing is recommended for optimal performance. The price point is higher than many alternatives, but the performance justifies it for serious players."
+		},
+		"seo": {
+			"metaDescription": "Luxilon ALU Power review - the professional's choice. Learn about power, control, spin, and why pros love this string.",
+			"keywords": ["luxilon alu power", "professional tennis string", "polyester string", "tennis string"]
+		},
+		"images": {
+			"featured": "/images/strings/luxilon-alu-power.jpg"
+		},
+		"publishedAt": "2024-01-25T00:00:00Z"
+	},
+	{
+		"id": "4",
+		"slug": "head-lyon",
+		"name": "Lyon",
+		"brand": "Head",
+		"type": "natural gut",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 4,
+			"power": 9,
+			"spin": 6,
+			"durability": 6,
+			"comfort": 10,
+			"overall": 5
+		},
+		"price": 39.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE4",
+			"tennisWarehouse": "https://tennis-warehouse.com/example4"
+		},
+		"content": {
+			"summary": "Head Lyon natural gut string offers premium comfort and power for players seeking the ultimate playing experience.",
+			"pros": [
+				"Exceptional comfort",
+				"Great power and feel",
+				"Premium quality",
+				"Smooth ball pocketing"
+			],
+			"cons": [
+				"Very expensive",
+				"Lower durability",
+				"Requires frequent restringing",
+				"Limited spin potential"
+			],
+			"fullReview": "Head Lyon represents the pinnacle of natural gut strings. Made from premium cow gut, it offers unmatched comfort and feel that synthetic strings simply can't replicate. The string provides excellent power and a plush response that many professional players prefer. However, natural gut strings break down relatively quickly and require frequent restringing (every 6-8 hours of play). The premium price point makes this string best suited for serious players who prioritize comfort and feel over durability."
+		},
+		"seo": {
+			"metaDescription": "Head Lyon natural gut string review. Premium comfort and power for serious players. Learn about durability, tension maintenance, and value.",
+			"keywords": ["head lyon", "natural gut string", "premium tennis string", "comfort string"]
+		},
+		"images": {
+			"featured": "/images/strings/head-lyon.jpg"
+		},
+		"publishedAt": "2024-02-01T00:00:00Z"
+	},
+	{
+		"id": "5",
+		"slug": "technifibre-x-one",
+		"name": "X-One",
+		"brand": "Technifibre",
+		"type": "polyester",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 8,
+			"power": 6,
+			"spin": 9,
+			"durability": 9,
+			"comfort": 5,
+			"overall": 4
+		},
+		"price": 18.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE5",
+			"tennisWarehouse": "https://tennis-warehouse.com/example5"
+		},
+		"content": {
+			"summary": "Technifibre X-One is a high-performance polyester string designed for players who want maximum spin and control.",
+			"pros": [
+				"Excellent spin potential",
+				"Great durability",
+				"Precise control",
+				"Professional performance"
+			],
+			"cons": [
+				"Very stiff",
+				"Poor comfort",
+				"Can cause arm fatigue",
+				"Not beginner-friendly"
+			],
+			"fullReview": "Technifibre X-One is one of the stiffest polyester strings available, making it ideal for advanced players who prioritize spin and control. The string's octagonal shape and high stiffness create exceptional spin potential, allowing players to hit aggressive topspin shots. While durability is excellent, the comfort level is very low, making it unsuitable for players with arm issues. This string is best for tournament players who can handle the harsh feel in exchange for superior performance."
+		},
+		"seo": {
+			"metaDescription": "Technifibre X-One polyester string review. Maximum spin and control for advanced players. Learn about stiffness, durability, and arm-friendly alternatives.",
+			"keywords": ["technifibre x-one", "polyester tennis string", "spin string", "control string"]
+		},
+		"images": {
+			"featured": "/images/strings/technifibre-x-one.jpg"
+		},
+		"publishedAt": "2024-02-05T00:00:00Z"
+	},
+	{
+		"id": "6",
+		"slug": "kirschbaum-super-smash",
+		"name": "Super Smash",
+		"brand": "Kirschbaum",
+		"type": "polyester",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 6,
+			"power": 8,
+			"spin": 7,
+			"durability": 8,
+			"comfort": 7,
+			"overall": 5
+		},
+		"price": 14.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE6",
+			"tennisWarehouse": "https://tennis-warehouse.com/example6"
+		},
+		"content": {
+			"summary": "Kirschbaum Super Smash offers excellent value with professional-grade performance and better comfort than most polyesters.",
+			"pros": [
+				"Great value for money",
+				"Good balance of attributes",
+				"Better comfort than most polyesters",
+				"Excellent durability",
+				"Suitable for all levels"
+			],
+			"cons": [
+				"Not the highest spin potential",
+				"Tension loss over time",
+				"Less control than premium strings"
+			],
+			"fullReview": "Kirschbaum Super Smash is one of the best value polyester strings available. It offers professional-grade performance at a budget-friendly price, making it accessible to a wide range of players. The string provides good power, decent spin, and better comfort than many competing polyesters. While it doesn't have the extreme spin potential of strings like RPM Blast, it offers a more balanced all-around performance that's suitable for players of all levels. The durability is excellent, and it maintains playability well over time."
+		},
+		"seo": {
+			"metaDescription": "Kirschbaum Super Smash polyester string review. Best value for money with professional performance. Learn about comfort, durability, and spin.",
+			"keywords": ["kirschbaum super smash", "budget polyester string", "value tennis string", "all-round string"]
+		},
+		"images": {
+			"featured": "/images/strings/kirschbaum-super-smash.jpg"
+		},
+		"publishedAt": "2024-02-10T00:00:00Z"
+	},
+	{
+		"id": "7",
+		"slug": "yonex-poly-tour-pro",
+		"name": "Poly Tour Pro",
+		"brand": "Yonex",
+		"type": "polyester",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 7,
+			"power": 6,
+			"spin": 8,
+			"durability": 8,
+			"comfort": 6,
+			"overall": 4
+		},
+		"price": 17.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE7",
+			"tennisWarehouse": "https://tennis-warehouse.com/example7"
+		},
+		"content": {
+			"summary": "Yonex Poly Tour Pro delivers professional-grade spin and control with innovative materials technology.",
+			"pros": [
+				"Excellent spin generation",
+				"Good control",
+				"Innovative materials",
+				"Professional performance",
+				"Consistent tension maintenance"
+			],
+			"cons": [
+				"Average comfort",
+				"Higher price point",
+				"May feel harsh on arm",
+				"Learning curve for beginners"
+			],
+			"fullReview": "Yonex Poly Tour Pro uses advanced materials technology to deliver professional-grade performance. The string's unique composition provides excellent spin potential while maintaining good control. Players who use this string appreciate its ability to generate heavy topspin without sacrificing accuracy. The tension maintenance is better than many polyesters, allowing for more consistent performance over time. While not the most comfortable option, it offers a good balance of power and precision that's popular among competitive players."
+		},
+		"seo": {
+			"metaDescription": "Yonex Poly Tour Pro polyester string review. Professional spin and control with innovative technology. Learn about performance and value.",
+			"keywords": ["yonex poly tour pro", "professional polyester string", "spin string", "control string"]
+		},
+		"images": {
+			"featured": "/images/strings/yonex-poly-tour-pro.jpg"
+		},
+		"publishedAt": "2024-02-15T00:00:00Z"
+	},
+	{
+		"id": "8",
+		"slug": "solstice-boomerang",
+		"name": "Boomerang",
+		"brand": "Solstice",
+		"type": "multifilament",
+		"gauge": 16,
+		"ratings": {
+			"stiffness": 3,
+			"power": 9,
+			"spin": 6,
+			"durability": 7,
+			"comfort": 9,
+			"overall": 4
+		},
+		"price": 24.99,
+		"affiliateLinks": {
+			"amazon": "https://amazon.com/dp/B00EXAMPLE8",
+			"tennisWarehouse": "https://tennis-warehouse.com/example8"
+		},
+		"content": {
+			"summary": "Solstice Boomerang is a premium multifilament string offering exceptional comfort and power for arm-friendly performance.",
+			"pros": [
+				"Outstanding comfort",
+				"Excellent power",
+				"Very arm-friendly",
+				"Good feel and touch",
+				"Premium quality"
+			],
+			"cons": [
+				"Higher price",
+				"Lower spin potential",
+				"Moderate durability",
+				"Not ideal for heavy topspin players"
+			],
+			"fullReview": "Solstice Boomerang is designed for players who prioritize comfort and arm health above all else. This premium multifilament string offers plush feel and excellent power without the harshness of polyester strings. The string's construction provides outstanding shock absorption, making it ideal for players with arm issues or those who play frequently. While spin potential is moderate compared to polyester strings, the comfort and feel make it a favorite among players who want an arm-friendly option that still delivers solid performance."
+		},
+		"seo": {
+			"metaDescription": "Solstice Boomerang multifilament string review. Premium comfort and power for arm-friendly tennis. Learn about durability, feel, and performance.",
+			"keywords": ["solstice boomerang", "multifilament string", "arm-friendly string", "comfort string"]
+		},
+		"images": {
+			"featured": "/images/strings/solstice-boomerang.jpg"
+		},
+		"publishedAt": "2024-02-20T00:00:00Z"
+	}
+]
