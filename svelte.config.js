@@ -6,7 +6,32 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter({
+			routes: {
+				include: ['/*'],
+				exclude: ['<build>', '<files>']
+			}
+		}),
+
+		// Prerender pages for better performance
+		prerender: {
+			entries: ['*']
+		}
+	},
+
+	// Ensure CSS is processed correctly
+	vite: {
+		css: {
+			devSourcemap: true
+		},
+		build: {
+			cssCodeSplit: false, // Bundle all CSS together for better loading
+			rollupOptions: {
+				output: {
+					manualChunks: undefined
+				}
+			}
+		}
 	}
 };
 
