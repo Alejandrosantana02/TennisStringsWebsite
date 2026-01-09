@@ -10,12 +10,22 @@ const config = {
 			routes: {
 				include: ['/*'],
 				exclude: ['<build>', '<files>']
+			},
+			platformProxy: {
+				configPath: 'wrangler.toml',
+				environment: 'production',
+				experimentalJsonConfig: false
 			}
 		}),
 
 		// Prerender pages for better performance
 		prerender: {
 			entries: ['*']
+		},
+
+		// Ensure assets are properly handled
+		assets: {
+			files: ['**/*']
 		}
 	},
 
@@ -28,7 +38,8 @@ const config = {
 			cssCodeSplit: false, // Bundle all CSS together for better loading
 			rollupOptions: {
 				output: {
-					manualChunks: undefined
+					manualChunks: undefined,
+					assetFileNames: 'assets/[name].[ext]'
 				}
 			}
 		}
