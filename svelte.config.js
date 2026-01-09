@@ -21,11 +21,6 @@ const config = {
 		// Prerender pages for better performance
 		prerender: {
 			entries: ['*']
-		},
-
-		// Ensure assets are properly handled
-		assets: {
-			files: ['**/*']
 		}
 	},
 
