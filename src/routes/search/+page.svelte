@@ -4,6 +4,7 @@
 	import StringReviewCard from '$lib/components/reviews/StringReviewCard.svelte';
 	import MachineCard from '$lib/components/machines/MachineCard.svelte';
 	import ArticleCard from '$lib/components/articles/ArticleCard.svelte';
+	import { trackSearch } from '$lib/utils/analytics';
 	import type { StringReview, StringingMachine, Article } from '$lib/types';
 
 	let results: {
@@ -22,6 +23,9 @@
 		query = $page.url.searchParams.get('q') || '';
 		if (query) {
 			await performSearch(query);
+			// Track search with result count
+			const totalResults = results.strings.length + results.machines.length + results.articles.length;
+			trackSearch(query, totalResults);
 		} else {
 			loading = false;
 		}

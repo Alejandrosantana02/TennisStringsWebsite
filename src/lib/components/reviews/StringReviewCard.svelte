@@ -1,13 +1,21 @@
 <script lang="ts">
 	import type { StringReview } from '$lib/types';
 	import RatingStars from './RatingStars.svelte';
+	import OptimizedImage from '../images/OptimizedImage.svelte';
 
 	export let review: StringReview;
 </script>
 
 <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
 	<figure class="h-48 bg-base-200">
-		<img src={review.images.featured} alt={review.name} class="object-cover w-full h-full" />
+		<OptimizedImage
+			src={review.images.featured}
+			alt="{review.brand} {review.name}"
+			loading="lazy"
+			width={400}
+			height={300}
+			className="object-cover w-full h-full"
+		/>
 	</figure>
 	<div class="card-body">
 		<div class="flex items-start justify-between mb-2">

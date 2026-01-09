@@ -315,25 +315,7 @@
 
 ---
 
-## Phase 7: Analytics & Tracking
 
-### Step 7.1: Google Analytics Setup
-- [ ] Create `src/lib/utils/analytics.ts`:
-  - Google Analytics 4 integration
-  - Event tracking functions
-  - Page view tracking
-
-- [ ] Add GA4 script to `src/app.html`
-- [ ] Track affiliate link clicks
-- [ ] Track search queries
-- [ ] Track filter usage
-
-### Step 7.2: Google Search Console
-- [ ] Set up Google Search Console
-- [ ] Submit sitemap
-- [ ] Verify ownership
-
----
 
 ## Phase 8: Performance Optimization
 

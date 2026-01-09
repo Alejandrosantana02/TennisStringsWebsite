@@ -1,5 +1,6 @@
 <script lang="ts">
 	import NewsletterSignup from '../newsletter/NewsletterSignup.svelte';
+	import AffiliateDisclosure from '../affiliate/AffiliateDisclosure.svelte';
 </script>
 
 <footer class="footer footer-center bg-base-200 text-base-content p-10">
@@ -34,12 +35,7 @@
 		</div>
 
 		<!-- Affiliate Disclosure -->
-		<div class="mt-8 pt-8 border-t border-base-300">
-			<p class="text-sm text-base-content/70">
-				<strong>Affiliate Disclosure:</strong> This site contains affiliate links. We may earn a commission
-				from purchases made through these links at no additional cost to you.
-			</p>
-		</div>
+		<AffiliateDisclosure variant="footer" />
 
 		<!-- Copyright -->
 		<div class="mt-4">

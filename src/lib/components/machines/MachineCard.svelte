@@ -1,12 +1,20 @@
 <script lang="ts">
 	import type { StringingMachine } from '$lib/types';
+	import OptimizedImage from '../images/OptimizedImage.svelte';
 
 	export let machine: StringingMachine;
 </script>
 
 <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
 	<figure class="h-48 bg-base-200">
-		<img src={machine.images.featured} alt={machine.name} class="object-cover w-full h-full" />
+		<OptimizedImage
+			src={machine.images.featured}
+			alt="{machine.brand} {machine.name}"
+			loading="lazy"
+			width={400}
+			height={300}
+			className="object-cover w-full h-full"
+		/>
 	</figure>
 	<div class="card-body">
 		<div class="flex items-start justify-between mb-2">

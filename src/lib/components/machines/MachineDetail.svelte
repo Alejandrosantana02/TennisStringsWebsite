@@ -1,6 +1,9 @@
 <script lang="ts">
 	import type { StringingMachine } from '$lib/types';
 	import AffiliateButton from '../affiliate/AffiliateButton.svelte';
+	import AffiliateDisclosure from '../affiliate/AffiliateDisclosure.svelte';
+	import OptimizedImage from '../images/OptimizedImage.svelte';
+	import { hasAffiliateLinks } from '$lib/utils/affiliate';
 
 	export let machine: StringingMachine;
 </script>
@@ -9,10 +12,13 @@
 	<!-- Hero Section -->
 	<div class="hero bg-base-200 rounded-lg mb-8">
 		<div class="hero-content flex-col lg:flex-row gap-8">
-			<img
+			<OptimizedImage
 				src={machine.images.featured}
-				alt={machine.name}
-				class="max-w-sm rounded-lg shadow-2xl"
+				alt="{machine.brand} {machine.name}"
+				loading="eager"
+				width={400}
+				height={400}
+				className="max-w-sm rounded-lg shadow-2xl"
 			/>
 			<div>
 				<h1 class="text-4xl font-bold mb-2">{machine.name}</h1>
@@ -28,14 +34,14 @@
 					{#if machine.affiliateLinks.amazon}
 						<AffiliateButton
 							href={machine.affiliateLinks.amazon}
-							vendor="Amazon"
+							vendor="amazon"
 							text="Check Price on Amazon"
 						/>
 					{/if}
 					{#if machine.affiliateLinks.tennisWarehouse}
 						<AffiliateButton
 							href={machine.affiliateLinks.tennisWarehouse}
-							vendor="Tennis Warehouse"
+							vendor="tennisWarehouse"
 							text="Buy on Tennis Warehouse"
 						/>
 					{/if}
@@ -117,6 +123,11 @@
 		<p class="whitespace-pre-line">{machine.content.fullReview}</p>
 	</div>
 
+	<!-- Affiliate Disclosure -->
+	{#if hasAffiliateLinks(machine.affiliateLinks)}
+		<AffiliateDisclosure variant="inline" />
+	{/if}
+
 	<!-- Affiliate Links -->
 	<div class="card bg-primary/10 border-primary mb-8">
 		<div class="card-body">
@@ -125,25 +136,28 @@
 				{#if machine.affiliateLinks.amazon}
 					<AffiliateButton
 						href={machine.affiliateLinks.amazon}
-						vendor="Amazon"
+						vendor="amazon"
 						text="Buy on Amazon"
 						variant="primary"
+						productName={machine.name}
 					/>
 				{/if}
 				{#if machine.affiliateLinks.tennisWarehouse}
 					<AffiliateButton
 						href={machine.affiliateLinks.tennisWarehouse}
-						vendor="Tennis Warehouse"
+						vendor="tennisWarehouse"
 						text="Buy on Tennis Warehouse"
 						variant="secondary"
+						productName={machine.name}
 					/>
 				{/if}
 				{#if machine.affiliateLinks.dicks}
 					<AffiliateButton
 						href={machine.affiliateLinks.dicks}
-						vendor="Dick's"
+						vendor="dicks"
 						text="Buy on Dick's"
 						variant="secondary"
+						productName={machine.name}
 					/>
 				{/if}
 			</div>

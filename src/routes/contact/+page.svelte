@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { trackContactForm } from '$lib/utils/analytics';
+
 	let formData = {
 		name: '',
 		email: '',
@@ -9,9 +11,22 @@
 	let status: 'idle' | 'loading' | 'success' | 'error' = 'idle';
 	let statusMessage = '';
 
+	// Enhanced email validation
+	function isValidEmail(email: string): boolean {
+		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		return emailRegex.test(email.trim());
+	}
+
 	async function handleSubmit() {
+		// Validation
 		if (!formData.name || !formData.email || !formData.message) {
 			statusMessage = 'Please fill in all required fields';
+			status = 'error';
+			return;
+		}
+
+		if (!isValidEmail(formData.email)) {
+			statusMessage = 'Please enter a valid email address';
 			status = 'error';
 			return;
 		}
@@ -32,13 +47,18 @@
 				status = 'success';
 				statusMessage = "Thank you for your message! We'll get back to you soon.";
 				formData = { name: '', email: '', subject: '', message: '' };
+				
+				// Track contact form submission
+				trackContactForm();
 			} else {
+				const data = await response.json();
 				status = 'error';
-				statusMessage = 'Something went wrong. Please try again.';
+				statusMessage = data.error || 'Something went wrong. Please try again.';
 			}
 		} catch (error) {
 			status = 'error';
-			statusMessage = 'Something went wrong. Please try again.';
+			statusMessage = 'Network error. Please check your connection and try again.';
+			console.error('Contact form error:', error);
 		}
 	}
 </script>

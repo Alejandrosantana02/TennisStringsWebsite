@@ -3,6 +3,7 @@
 	import { writable } from 'svelte/store';
 
 	export let reviews: StringReview[];
+	export let limit: number | undefined = undefined;
 
 	const sortBy = writable<{ column: string; direction: 'asc' | 'desc' }>({
 		column: 'name',
@@ -13,7 +14,8 @@
 
 	$: {
 		const { column, direction } = $sortBy;
-		sortedReviews = [...reviews].sort((a, b) => {
+		const reviewsToSort = limit ? reviews.slice(0, limit) : reviews;
+		sortedReviews = [...reviewsToSort].sort((a, b) => {
 			let aVal: any;
 			let bVal: any;
 

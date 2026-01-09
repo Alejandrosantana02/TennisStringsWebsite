@@ -14,10 +14,10 @@
 			"comfort": 4,
 			"overall": 4
 		},
-		"price": 14.99,
+		"price": 15.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE",
-			"tennisWarehouse": "https://tennis-warehouse.com/example"
+			"amazon": "https://www.amazon.com/Babolat-Blast-Tennis-String-Black/dp/B00COFUREI?th=1&psc=1",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Babolat_RPM_Blast_16_130_String/descpageACBAB-BRPMB16.html"
 		},
 		"content": {
 			"summary": "Babolat RPM Blast is a high-performance polyester string designed for players seeking maximum spin and control.",
@@ -58,10 +58,10 @@
 			"comfort": 9,
 			"overall": 4
 		},
-		"price": 19.99,
+		"price": 18.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE2",
-			"tennisWarehouse": "https://tennis-warehouse.com/example2"
+			"amazon": "amazon.com/Wilson-NXT-40-Feet-String-Natural/dp/B00GKQGKZM",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Wilson_Duo_Power_ALU_Power_125__NXT_Power_16_String/descpageACWILSON-DUOPALUNXT.html"
 		},
 		"content": {
 			"summary": "Wilson NXT is a premium multifilament string offering exceptional comfort and power for players seeking arm-friendly performance.",
@@ -104,8 +104,8 @@
 		},
 		"price": 16.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE3",
-			"tennisWarehouse": "https://tennis-warehouse.com/example3"
+			"amazon": "https://www.amazon.com/Luxilon-Power-Tennis-Racquet-String/dp/B001EHEJ1Y",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Luxilon_ALU_Power_16_130_String/descpageACWILSON-LUXP16.html"
 		},
 		"content": {
 			"summary": "Luxilon ALU Power is a legendary polyester string used by many professional players for its excellent balance of power, control, and spin.",
@@ -148,8 +148,8 @@
 		},
 		"price": 39.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE4",
-			"tennisWarehouse": "https://tennis-warehouse.com/example4"
+			"amazon": "https://www.amazon.com/HEAD-Champagne-Monofilament-Tennis-String/dp/B09KBZ6XX6",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Head_Lynx_Tour_18_120_String/descpageACHEAD-LTR18.html"
 		},
 		"content": {
 			"summary": "Head Lyon natural gut string offers premium comfort and power for players seeking the ultimate playing experience.",
@@ -193,8 +193,8 @@
 		},
 		"price": 18.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE5",
-			"tennisWarehouse": "https://tennis-warehouse.com/example5"
+			"amazon": "https://www.amazon.com/Tecnifibre-Biphase-Tennis-String-Natural/dp/B07X92J4JS",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Tecnifibre_X-One_Biphase_16_130_String_/descpageACTFUSA-X116.html"
 		},
 		"content": {
 			"summary": "Technifibre X-One is a high-performance polyester string designed for players who want maximum spin and control.",
@@ -238,8 +238,8 @@
 		},
 		"price": 14.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE6",
-			"tennisWarehouse": "https://tennis-warehouse.com/example6"
+			"amazon": "https://www.amazon.com/Kirschbaum-Super-Smash-Tennis-String/dp/B002MQ7UI0",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Kirschbaum_Super_Smash_Orange_16L_128_String/descpageACKIRSCH-SMASH16OR.html"
 		},
 		"content": {
 			"summary": "Kirschbaum Super Smash offers excellent value with professional-grade performance and better comfort than most polyesters.",
@@ -283,8 +283,8 @@
 		},
 		"price": 17.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE7",
-			"tennisWarehouse": "https://tennis-warehouse.com/example7"
+			"amazon": "https://www.amazon.com/Yonex-Poly-Tour-Tennis-String/dp/B00F36WHPC",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Yonex_POLYTOUR_PRO_16_130_Black_String/descpageACYONEX-YPTP130BK.html"
 		},
 		"content": {
 			"summary": "Yonex Poly Tour Pro delivers professional-grade spin and control with innovative materials technology.",
@@ -327,10 +327,10 @@
 			"comfort": 9,
 			"overall": 4
 		},
-		"price": 24.99,
+		"price": 11.99,
 		"affiliateLinks": {
-			"amazon": "https://amazon.com/dp/B00EXAMPLE8",
-			"tennisWarehouse": "https://tennis-warehouse.com/example8"
+			"amazon": "https://www.amazon.com/Diadem-Solstice-16-1-30mm-Tennis-String/dp/B012BMIJU2",
+			"tennisWarehouse": "https://www.tennis-warehouse.com/Diadem_Solstice_Power_15L_135_String/descpageACDIADEM-DSP15L.html"
 		},
 		"content": {
 			"summary": "Solstice Boomerang is a premium multifilament string offering exceptional comfort and power for arm-friendly performance.",

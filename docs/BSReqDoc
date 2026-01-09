@@ -1,0 +1,273 @@
+Absolutely, Alejandro — if you’re building a niche site around **Tennis String Reviews & Stringing Machines**, you’re stepping into a high‑intent, gear‑driven niche with excellent affiliate potential. Below is a **full Business Requirements Document (BRD)** and a **Technical Specification (Tech Spec)** written in a clean, professional format you can hand to a developer or use to guide your build.
+
+---
+
+# 📘 **Business Requirements Document (BRD)**  
+### **Project: Tennis String Reviews & Stringing Machines Website**
+
+---
+
+## 🎯 **1. Project Overview**
+Create a niche content website focused on:
+- Tennis string reviews  
+- Stringing machine reviews  
+- Stringing guides, tutorials, and comparisons  
+- Buyer’s guides for tennis players and home stringers  
+
+The site will generate revenue through:
+- **Affiliate marketing** (Amazon, Tennis Warehouse, Dick’s Sporting Goods, etc.)  
+- **Google AdSense / programmatic ads**  
+
+The goal is to build a high‑authority, SEO‑optimized site targeting tennis players, coaches, and DIY stringers.
+
+---
+
+## 🧩 **2. Business Objectives**
+- Rank for long‑tail, low‑competition keywords related to tennis strings and stringing machines.
+- Build trust through expert‑style reviews and comparison content.
+- Monetize through affiliate links embedded in reviews and buying guides.
+- Achieve 20,000+ monthly organic visitors within 12–18 months.
+- Maintain a clean, fast, mobile‑optimized user experience.
+
+---
+
+## 👥 **3. Target Audience**
+- Recreational tennis players  
+- Competitive juniors and adults  
+- Coaches and stringers  
+- DIY home stringers  
+- Tennis gear enthusiasts  
+
+Pain points:
+- Confusion about string types  
+- Difficulty choosing tension  
+- Lack of unbiased reviews  
+- Wanting to save money by stringing at home  
+
+---
+
+## 📝 **4. Core Content Categories**
+### **A. Tennis String Reviews**
+- Polyester string reviews  
+- Multifilament string reviews  
+- Hybrid string setups  
+- Comfort strings for tennis elbow  
+- Power vs control string comparisons  
+
+### **B. Stringing Machine Reviews**
+- Drop‑weight machines  
+- Crank machines  
+- Electronic machines  
+- Best machines under $300 / $500 / $1000  
+
+### **C. Stringing Tutorials & Guides**
+- How to choose string tension  
+- How to string a racquet (step‑by‑step)  
+- Best strings for beginners / intermediates / advanced players  
+- How to maintain a stringing machine  
+
+### **D. Buyer’s Guides**
+- Best tennis strings for spin  
+- Best strings for durability  
+- Best stringing machines for beginners  
+
+---
+
+## 💰 **5. Monetization Requirements**
+### **Affiliate Marketing**
+- Amazon Associates  
+- Tennis Warehouse affiliate program  
+- Dick’s Sporting Goods affiliate program  
+- High‑ticket machines ($300–$2000) for strong commissions  
+
+### **Ad Revenue**
+- Google AdSense or Ezoic (once traffic grows)  
+- Ad placements:
+  - In‑content ads  
+  - Sidebar ads  
+  - Header banner  
+  - Sticky footer ad (mobile)  
+
+---
+
+## 📈 **6. SEO Requirements**
+- Keyword research for every article  
+- On‑page SEO:
+  - H1/H2/H3 structure  
+  - Internal linking  
+  - Schema markup for product reviews  
+- Technical SEO:
+  - Fast load times  
+  - Image compression  
+  - Mobile‑first design  
+- Backlink strategy:
+  - Guest posts  
+  - Tennis forums  
+  - Partnerships with coaches  
+
+---
+
+## 🧪 **7. Functional Requirements**
+- Search bar with autocomplete  
+- Category pages with filters (string type, stiffness, price)  
+- Comparison tables  
+- Product rating system (editor rating only, no user reviews)  
+- Affiliate link tracking  
+- Email newsletter signup  
+- Contact form  
+- About page for trust signals  
+
+---
+
+## 🎨 **8. UX/UI Requirements**
+- Clean, minimal, gear‑focused design  
+- White background, tennis‑themed accents  
+- Sticky navigation bar  
+- Fast‑loading images  
+- Mobile‑optimized article layout  
+- Clear CTA buttons (“Check Price on Amazon”)  
+
+---
+
+## 📊 **9. KPIs**
+- Organic traffic growth  
+- Affiliate click‑through rate (CTR)  
+- Affiliate conversion rate  
+- Ad revenue RPM  
+- Time on page  
+- Bounce rate  
+
+---
+
+# 🛠️ **Technical Specification (Tech Spec)**  
+### **Project: Tennis String Reviews & Stringing Machines Website**
+
+---
+
+## 🧱 **1. Tech Stack**
+### **Frontend**
+- HTML5, CSS3, JavaScript  
+- Responsive framework (TailwindCSS or Bootstrap)  
+
+### **Backend / CMS**
+- WordPress (recommended for speed + SEO plugins)  
+- PHP 8+  
+- MySQL database  
+
+### **Hosting**
+- Cloudways, SiteGround, or WPX  
+- CDN: Cloudflare  
+
+---
+
+## 🔌 **2. Required Plugins / Integrations**
+### **SEO**
+- RankMath or Yoast SEO  
+- Schema Pro (for review schema)  
+
+### **Performance**
+- WP Rocket or LiteSpeed Cache  
+- ShortPixel or Imagify for image compression  
+
+### **Affiliate**
+- ThirstyAffiliates or Lasso for link management  
+- Amazon API integration (optional)  
+
+### **Analytics**
+- Google Analytics 4  
+- Google Search Console  
+
+### **Ads**
+- Google AdSense integration  
+- Ezoic (optional after traffic grows)  
+
+---
+
+## 🧰 **3. Core Features (Technical Requirements)**
+
+### **A. Review System**
+- Custom post type: **“String Reviews”**  
+- Custom fields:
+  - String type  
+  - Gauge  
+  - Stiffness rating  
+  - Power rating  
+  - Spin rating  
+  - Durability rating  
+  - Price  
+  - Affiliate links  
+
+### **B. Comparison Tables**
+- Auto‑generated tables using ACF fields  
+- Sortable columns (price, stiffness, durability)  
+
+### **C. Category Filters**
+- Filter by:
+  - String type (poly, multi, hybrid)  
+  - Price range  
+  - Skill level  
+  - Comfort level  
+
+### **D. Stringing Machine Database**
+- Custom post type: **“Stringing Machines”**  
+- Fields:
+  - Machine type (drop‑weight, crank, electronic)  
+  - Mounting system  
+  - Tension range  
+  - Price  
+  - Pros/cons  
+  - Affiliate links  
+
+---
+
+## 🔐 **4. Security Requirements**
+- SSL enabled  
+- Daily backups  
+- Firewall (Cloudflare or Wordfence)  
+- Limit login attempts  
+
+---
+
+## ⚙️ **5. Performance Requirements**
+- Page load under 2 seconds  
+- Image lazy loading  
+- Minified CSS/JS  
+- WebP image support  
+
+---
+
+## 🧪 **6. Testing Requirements**
+- Cross‑browser testing (Chrome, Safari, Firefox)  
+- Mobile responsiveness testing  
+- Affiliate link click tracking test  
+- Schema validation test  
+- Core Web Vitals test  
+
+---
+
+## 🚀 **7. Deployment Plan**
+1. Set up hosting + domain  
+2. Install WordPress + theme  
+3. Configure plugins  
+4. Build homepage + category pages  
+5. Upload first 10 articles  
+6. Submit sitemap to Google  
+7. Begin link‑building and content expansion  
+
+---
+
+## 📚 **8. Documentation**
+- Content style guide  
+- Affiliate link management guide  
+- SEO checklist  
+- Publishing workflow  
+
+---
+
+If you want, I can also create:
+- Your **site architecture / sitemap**  
+- Your **first 20 article titles**  
+- A **content calendar**  
+- A **brand name + domain name list**  
+
+Just tell me what direction you want to go next.

@@ -1,13 +1,21 @@
 <script lang="ts">
 	import type { Article } from '$lib/types';
 	import { format } from 'date-fns';
+	import OptimizedImage from '../images/OptimizedImage.svelte';
 
 	export let article: Article;
 </script>
 
 <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
 	<figure class="h-48 bg-base-200">
-		<img src={article.images.featured} alt={article.title} class="object-cover w-full h-full" />
+		<OptimizedImage
+			src={article.images.featured}
+			alt={article.title}
+			loading="lazy"
+			width={400}
+			height={300}
+			className="object-cover w-full h-full"
+		/>
 	</figure>
 	<div class="card-body">
 		<div class="flex items-center gap-2 mb-2">

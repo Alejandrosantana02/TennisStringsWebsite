@@ -2,6 +2,9 @@
 	import type { StringReview } from '$lib/types';
 	import RatingStars from './RatingStars.svelte';
 	import AffiliateButton from '../affiliate/AffiliateButton.svelte';
+	import AffiliateDisclosure from '../affiliate/AffiliateDisclosure.svelte';
+	import OptimizedImage from '../images/OptimizedImage.svelte';
+	import { hasAffiliateLinks } from '$lib/utils/affiliate';
 
 	export let review: StringReview;
 
@@ -24,10 +27,13 @@
 	<!-- Hero Section -->
 	<div class="hero bg-base-200 rounded-lg mb-8">
 		<div class="hero-content flex-col lg:flex-row gap-8">
-			<img
+			<OptimizedImage
 				src={review.images.featured}
-				alt={review.name}
-				class="max-w-sm rounded-lg shadow-2xl"
+				alt="{review.brand} {review.name}"
+				loading="eager"
+				width={400}
+				height={400}
+				className="max-w-sm rounded-lg shadow-2xl"
 			/>
 			<div>
 				<h1 class="text-4xl font-bold mb-2">{review.name}</h1>
@@ -45,14 +51,14 @@
 					{#if review.affiliateLinks.amazon}
 						<AffiliateButton
 							href={review.affiliateLinks.amazon}
-							vendor="Amazon"
+							vendor="amazon"
 							text="Check Price on Amazon"
 						/>
 					{/if}
 					{#if review.affiliateLinks.tennisWarehouse}
 						<AffiliateButton
 							href={review.affiliateLinks.tennisWarehouse}
-							vendor="Tennis Warehouse"
+							vendor="tennisWarehouse"
 							text="Buy on Tennis Warehouse"
 						/>
 					{/if}
@@ -165,6 +171,11 @@
 		<p class="whitespace-pre-line">{review.content.fullReview}</p>
 	</div>
 
+	<!-- Affiliate Disclosure -->
+	{#if hasAffiliateLinks(review.affiliateLinks)}
+		<AffiliateDisclosure variant="inline" />
+	{/if}
+
 	<!-- Affiliate Links -->
 	<div class="card bg-primary/10 border-primary mb-8">
 		<div class="card-body">
@@ -173,25 +184,28 @@
 				{#if review.affiliateLinks.amazon}
 					<AffiliateButton
 						href={review.affiliateLinks.amazon}
-						vendor="Amazon"
+						vendor="amazon"
 						text="Buy on Amazon"
 						variant="primary"
+						productName={review.name}
 					/>
 				{/if}
 				{#if review.affiliateLinks.tennisWarehouse}
 					<AffiliateButton
 						href={review.affiliateLinks.tennisWarehouse}
-						vendor="Tennis Warehouse"
+						vendor="tennisWarehouse"
 						text="Buy on Tennis Warehouse"
 						variant="secondary"
+						productName={review.name}
 					/>
 				{/if}
 				{#if review.affiliateLinks.dicks}
 					<AffiliateButton
 						href={review.affiliateLinks.dicks}
-						vendor="Dick's"
+						vendor="dicks"
 						text="Buy on Dick's"
 						variant="secondary"
+						productName={review.name}
 					/>
 				{/if}
 			</div>

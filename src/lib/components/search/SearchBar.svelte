@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { trackSearch } from '$lib/utils/analytics';
 
 	let query = '';
 	let showDropdown = false;
@@ -16,6 +17,9 @@
 
 	function handleSearch() {
 		if (query.trim().length === 0) return;
+
+		// Track search query
+		trackSearch(query.trim());
 
 		// Save to recent searches
 		if (!recentSearches.includes(query.trim())) {
@@ -38,13 +42,13 @@
 	}
 </script>
 
-<div class="relative">
+<div class="relative w-full">
 	<div class="form-control">
-		<div class="input-group">
+		<div class="input-group flex-nowrap">
 			<input
 				type="text"
 				placeholder="Search reviews, machines, guides..."
-				class="input input-bordered w-full"
+				class="input input-bordered flex-1 text-sm sm:text-base"
 				bind:value={query}
 				on:focus={() => (showDropdown = true)}
 				on:blur={() => setTimeout(() => (showDropdown = false), 200)}
@@ -54,10 +58,10 @@
 					}
 				}}
 			/>
-			<button class="btn btn-square" on:click={handleSearch}>
+			<button class="btn btn-square btn-primary flex-shrink-0" on:click={handleSearch}>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					class="h-5 w-5"
+					class="h-4 w-4 sm:h-5 sm:w-5"
 					fill="none"
 					viewBox="0 0 24 24"
 					stroke="currentColor"

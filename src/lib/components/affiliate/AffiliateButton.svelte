@@ -1,17 +1,20 @@
 <script lang="ts">
+	import { getTrackedAffiliateLink, formatVendorName, type AffiliateVendor } from '$lib/utils/affiliate';
+	import { trackAffiliateClick } from '$lib/utils/analytics';
+
 	export let href: string;
-	export let vendor: string;
+	export let vendor: AffiliateVendor;
 	export let text: string;
 	export let variant: 'primary' | 'secondary' = 'primary';
+	export let productName: string | undefined = undefined;
+	export let productId: string | undefined = undefined;
+
+	// Generate affiliate link with tracking parameters
+	$: affiliateLink = getTrackedAffiliateLink(href, vendor, productName || text, productId);
+	$: vendorName = formatVendorName(vendor);
 
 	function handleClick() {
-		// Track affiliate click (will implement analytics in Sprint 7)
-		if (typeof window !== 'undefined' && (window as any).gtag) {
-			(window as any).gtag('event', 'affiliate_click', {
-				vendor,
-				link_url: href
-			});
-		}
+		trackAffiliateClick(vendor, productName || text, affiliateLink);
 	}
 
 	const variantClasses = {
@@ -21,11 +24,12 @@
 </script>
 
 <a
-	href={href}
+	href={affiliateLink}
 	target="_blank"
 	rel="noopener noreferrer nofollow"
 	class="btn {variantClasses[variant]}"
 	on:click={handleClick}
+	aria-label="Buy {text} on {vendorName} (affiliate link)"
 >
 	{text}
 	<svg

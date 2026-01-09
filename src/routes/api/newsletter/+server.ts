@@ -2,15 +2,25 @@ import { json } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
 import type { RequestHandler } from './$types';
 
+// Enhanced email validation
+function isValidEmail(email: string): boolean {
+	if (!email || typeof email !== 'string') return false;
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	return emailRegex.test(email.trim());
+}
+
 export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const { email } = await request.json();
 
-		if (!email || !email.includes('@')) {
-			return json({ error: 'Invalid email address' }, { status: 400 });
+		// Enhanced email validation
+		if (!email || !isValidEmail(email)) {
+			return json({ error: 'Please enter a valid email address' }, { status: 400 });
 		}
 
-		// Mailchimp integration (example)
+		const normalizedEmail = email.trim().toLowerCase();
+
+		// Mailchimp integration
 		const MAILCHIMP_API_KEY = env.MAILCHIMP_API_KEY;
 		const MAILCHIMP_LIST_ID = env.MAILCHIMP_LIST_ID;
 		const MAILCHIMP_SERVER_PREFIX = env.MAILCHIMP_SERVER_PREFIX;
@@ -26,28 +36,54 @@ export const POST: RequestHandler = async ({ request }) => {
 							'Content-Type': 'application/json'
 						},
 						body: JSON.stringify({
-							email_address: email,
+							email_address: normalizedEmail,
 							status: 'subscribed'
 						})
 					}
 				);
 
+				const data = await response.json();
+
 				if (!response.ok) {
-					console.error('Mailchimp API error:', await response.text());
-					return json({ error: 'Failed to subscribe to newsletter' }, { status: 500 });
+					// Handle specific Mailchimp errors
+					if (response.status === 400 && data.title === 'Member Exists') {
+						return json(
+							{ error: 'This email is already subscribed to our newsletter' },
+							{ status: 400 }
+						);
+					}
+					
+					console.error('Mailchimp API error:', data);
+					return json(
+						{ error: 'Failed to subscribe to newsletter. Please try again later.' },
+						{ status: 500 }
+					);
 				}
+
+				return json({
+					success: true,
+					message: 'Successfully subscribed to newsletter!'
+				});
 			} catch (mailchimpError) {
 				console.error('Mailchimp integration error:', mailchimpError);
-				return json({ error: 'Newsletter service temporarily unavailable' }, { status: 500 });
+				return json(
+					{ error: 'Newsletter service temporarily unavailable. Please try again later.' },
+					{ status: 500 }
+				);
 			}
 		} else {
 			// Fallback: just log the email (for development/testing)
-			console.log('Newsletter signup:', email);
+			console.log('Newsletter signup (dev mode):', normalizedEmail);
+			return json({
+				success: true,
+				message: 'Successfully subscribed (dev mode)'
+			});
 		}
-
-		return json({ success: true, message: 'Successfully subscribed' });
 	} catch (error) {
 		console.error('Newsletter API error:', error);
-		return json({ error: 'Something went wrong' }, { status: 500 });
+		return json(
+			{ error: 'Something went wrong. Please try again later.' },
+			{ status: 500 }
+		);
 	}
 };

@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { dev } from '$app/environment';
 
-	export let measurementId: string;
+	export let measurementId: string | undefined;
 
 	onMount(() => {
 		// Only load GA in production

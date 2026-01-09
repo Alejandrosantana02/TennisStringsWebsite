@@ -31,15 +31,16 @@
 					</svg>
 				</button>
 			</div>
-			<a href="/" class="btn btn-ghost text-xl font-bold text-primary">
-				Tennis Strings
+			<a href="/" class="btn btn-ghost text-lg sm:text-xl font-bold text-primary px-2">
+				<span class="hidden sm:inline">Tennis Strings</span>
+				<span class="sm:hidden">Tennis</span>
 			</a>
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<Navbar />
 		</div>
 		<div class="navbar-end">
-			<div class="hidden md:block w-64">
+			<div class="hidden md:block w-64 lg:w-72 xl:w-80">
 				<SearchBar />
 			</div>
 			<a href="/search" class="btn btn-ghost btn-circle md:hidden">

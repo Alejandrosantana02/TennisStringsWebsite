@@ -29,11 +29,16 @@ export function generateReviewSchema(review: StringReview): object {
 }
 
 export function generateProductSchema(review: StringReview | StringingMachine): object {
-	const price = 'price' in review 
-		? review.price 
-		: ('priceRange' in review && review.priceRange) 
-			? review.priceRange.min 
-			: 0;
+	let price = 0;
+
+	if ('price' in review) {
+		// StringReview has a direct price property
+		price = (review as StringReview).price;
+	} else if ('priceRange' in review) {
+		// StringingMachine has a priceRange
+		const machine = review as StringingMachine;
+		price = machine.priceRange ? machine.priceRange.min : 0;
+	}
 	
 	return {
 		'@context': 'https://schema.org',

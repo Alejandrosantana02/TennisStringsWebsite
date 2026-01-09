@@ -5,9 +5,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-	font-family: 'Inter', system-ui, -apple-system, sans-serif;
+	/* Typography */
+	--font-family: 'Inter', system-ui, -apple-system, sans-serif;
+	--font-size-base: 16px;
+	--line-height-base: 1.5;
+
+	/* Colors - Tennis Theme */
+	--color-primary: #00A651;
+	--color-primary-dark: #008541;
+	--color-primary-light: #33AF73;
+	--color-secondary: #1F2937;
+	--color-accent: #F59E0B;
+	--color-success: #10B981;
+	--color-warning: #F59E0B;
+	--color-error: #EF4444;
+	--color-info: #3B82F6;
+
+	/* Spacing */
+	--spacing-xs: 0.25rem;
+	--spacing-sm: 0.5rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2rem;
+	--spacing-2xl: 3rem;
+
+	/* Transitions */
+	--transition-fast: 150ms ease-in-out;
+	--transition-base: 300ms ease-in-out;
+	--transition-slow: 500ms ease-in-out;
+}
+
+/* Typography */
+:root {
+	font-family: var(--font-family);
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-base);
 }
 
 body {
 	@apply bg-base-100 text-base-content;
+	font-family: var(--font-family);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+	@apply font-bold;
+	line-height: 1.2;
+}
+
+h1 {
+	@apply text-4xl md:text-5xl;
+}
+
+h2 {
+	@apply text-3xl md:text-4xl;
+}
+
+h3 {
+	@apply text-2xl md:text-3xl;
+}
+
+h4 {
+	@apply text-xl md:text-2xl;
+}
+
+h5 {
+	@apply text-lg md:text-xl;
+}
+
+h6 {
+	@apply text-base md:text-lg;
+}
+
+/* Links */
+a {
+	@apply transition-colors duration-200;
+}
+
+a:hover {
+	@apply text-primary;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+	@apply outline-2 outline-offset-2 outline-primary;
+}
+
+/* Smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-base-200;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-neutral-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	@apply bg-neutral-500;
+}
+
+/* Touch targets - minimum 44x44px for mobile */
+.btn, .input, button, a[role="button"] {
+	min-height: 44px;
+	min-width: 44px;
 }
