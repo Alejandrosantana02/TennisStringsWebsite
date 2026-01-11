@@ -1,16 +1,10 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import MachineCard from '$lib/components/machines/MachineCard.svelte';
-	import { loadMachineReviews } from '$lib/utils/content';
-	import type { StringingMachine } from '$lib/types';
+	import type { PageData } from './$types';
 
-	let machines: StringingMachine[] = [];
-	let loading = true;
+	export let data: PageData;
 
-	onMount(async () => {
-		machines = await loadMachineReviews();
-		loading = false;
-	});
+	$: machines = data.machines;
 </script>
 
 <svelte:head>
@@ -24,15 +18,9 @@
 <div class="container mx-auto px-4 py-8">
 	<h1 class="text-4xl font-bold mb-8">Stringing Machine Reviews</h1>
 
-	{#if loading}
-		<div class="flex justify-center items-center min-h-[400px]">
-			<span class="loading loading-spinner loading-lg"></span>
-		</div>
-	{:else}
-		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-			{#each machines as machine}
-				<MachineCard {machine} />
-			{/each}
-		</div>
-	{/if}
+	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+		{#each machines as machine}
+			<MachineCard {machine} />
+		{/each}
+	</div>
 </div>

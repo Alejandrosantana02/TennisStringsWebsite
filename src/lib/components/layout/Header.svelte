@@ -31,10 +31,9 @@
 					</svg>
 				</button>
 			</div>
-			<a href="/" class="btn btn-ghost text-lg sm:text-xl font-bold text-primary px-2">
-				<span class="hidden sm:inline">Tennis Strings</span>
-				<span class="sm:hidden">Tennis</span>
-			</a>
+		<a href="/" class="btn btn-ghost text-lg sm:text-xl font-bold text-primary px-2">
+			Tennis Strings
+		</a>
 		</div>
 		<div class="navbar-center hidden lg:flex">
 			<Navbar />

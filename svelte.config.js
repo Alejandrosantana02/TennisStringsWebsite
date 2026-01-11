@@ -10,11 +10,6 @@ const config = {
 			routes: {
 				include: ['/*'],
 				exclude: ['<build>', '<files>']
-			},
-			platformProxy: {
-				configPath: 'wrangler.toml',
-				environment: 'production',
-				experimentalJsonConfig: false
 			}
 		}),
 

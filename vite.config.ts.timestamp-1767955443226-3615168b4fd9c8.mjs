@@ -1,0 +1,16 @@
+// vite.config.ts
+import { sveltekit } from "file:///C:/Users/Alejandro/Git/TennisStringsWebsite/node_modules/@sveltejs/kit/src/exports/vite/index.js";
+import { defineConfig } from "file:///C:/Users/Alejandro/Git/TennisStringsWebsite/node_modules/vite/dist/node/index.js";
+var vite_config_default = defineConfig({
+  plugins: [sveltekit()],
+  server: {
+    fs: {
+      allow: ["."]
+    }
+  },
+  publicDir: "public"
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxBbGVqYW5kcm9cXFxcR2l0XFxcXFRlbm5pc1N0cmluZ3NXZWJzaXRlXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ZpbGVuYW1lID0gXCJDOlxcXFxVc2Vyc1xcXFxBbGVqYW5kcm9cXFxcR2l0XFxcXFRlbm5pc1N0cmluZ3NXZWJzaXRlXFxcXHZpdGUuY29uZmlnLnRzXCI7Y29uc3QgX192aXRlX2luamVjdGVkX29yaWdpbmFsX2ltcG9ydF9tZXRhX3VybCA9IFwiZmlsZTovLy9DOi9Vc2Vycy9BbGVqYW5kcm8vR2l0L1Rlbm5pc1N0cmluZ3NXZWJzaXRlL3ZpdGUuY29uZmlnLnRzXCI7aW1wb3J0IHsgc3ZlbHRla2l0IH0gZnJvbSAnQHN2ZWx0ZWpzL2tpdC92aXRlJztcbmltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnO1xuXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xuXHRwbHVnaW5zOiBbc3ZlbHRla2l0KCldLFxuXHRzZXJ2ZXI6IHtcblx0XHRmczoge1xuXHRcdFx0YWxsb3c6IFsnLiddXG5cdFx0fVxuXHR9LFxuXHRwdWJsaWNEaXI6ICdwdWJsaWMnXG59KTtcbiJdLAogICJtYXBwaW5ncyI6ICI7QUFBNlQsU0FBUyxpQkFBaUI7QUFDdlYsU0FBUyxvQkFBb0I7QUFFN0IsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDM0IsU0FBUyxDQUFDLFVBQVUsQ0FBQztBQUFBLEVBQ3JCLFFBQVE7QUFBQSxJQUNQLElBQUk7QUFBQSxNQUNILE9BQU8sQ0FBQyxHQUFHO0FBQUEsSUFDWjtBQUFBLEVBQ0Q7QUFBQSxFQUNBLFdBQVc7QUFDWixDQUFDOyIsCiAgIm5hbWVzIjogW10KfQo=

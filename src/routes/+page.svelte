@@ -1,27 +1,13 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import StringReviewCard from '$lib/components/reviews/StringReviewCard.svelte';
 	import MachineCard from '$lib/components/machines/MachineCard.svelte';
 	import ArticleCard from '$lib/components/articles/ArticleCard.svelte';
 	import NewsletterSignup from '$lib/components/newsletter/NewsletterSignup.svelte';
-	import { loadStringReviews, loadMachineReviews, loadArticles } from '$lib/utils/content';
-	import type { StringReview, StringingMachine, Article } from '$lib/types';
+	import type { PageData } from './$types';
 
-	let featuredStrings: StringReview[] = [];
-	let featuredMachines: StringingMachine[] = [];
-	let latestArticles: Article[] = [];
+	export let data: PageData;
 
-	onMount(async () => {
-		const [strings, machines, articles] = await Promise.all([
-			loadStringReviews(),
-			loadMachineReviews(),
-			loadArticles()
-		]);
-
-		featuredStrings = strings.slice(0, 3);
-		featuredMachines = machines.slice(0, 2);
-		latestArticles = articles.slice(0, 3);
-	});
+	$: ({ featuredStrings, featuredMachines, latestArticles } = data);
 </script>
 
 <svelte:head>

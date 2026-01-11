@@ -1,29 +1,19 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import StringReviewCard from '$lib/components/reviews/StringReviewCard.svelte';
 	import ComparisonTable from '$lib/components/reviews/ComparisonTable.svelte';
-	import { loadStringReviews } from '$lib/utils/content';
-	import type { StringReview } from '$lib/types';
+	import type { PageData } from './$types';
 
-	let reviews: StringReview[] = [];
+	export let data: PageData;
+
 	let viewMode: 'grid' | 'table' = 'grid';
-	let loading = true;
-	let displayCount = 6; // Start with 6 reviews for faster initial load
-	let showLoadMore = false;
+	let displayCount = 6;
 
-	onMount(async () => {
-		const allReviews = await loadStringReviews();
-		reviews = allReviews.slice(0, displayCount);
-		showLoadMore = allReviews.length > displayCount;
-		loading = false;
-	});
+	$: allReviews = data.reviews;
+	$: reviews = allReviews.slice(0, displayCount);
+	$: showLoadMore = displayCount < allReviews.length;
 
 	function loadMore() {
 		displayCount += 6;
-		loadStringReviews().then(allReviews => {
-			reviews = allReviews.slice(0, displayCount);
-			showLoadMore = displayCount < allReviews.length;
-		});
 	}
 </script>
 
@@ -54,11 +44,7 @@
 		</div>
 	</div>
 
-	{#if loading}
-		<div class="flex justify-center items-center min-h-[400px]">
-			<span class="loading loading-spinner loading-lg"></span>
-		</div>
-	{:else if viewMode === 'grid'}
+	{#if viewMode === 'grid'}
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 			{#each reviews as review}
 				<StringReviewCard {review} />
