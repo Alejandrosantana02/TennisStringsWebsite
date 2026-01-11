@@ -7,6 +7,5 @@ export default defineConfig({
 		fs: {
 			allow: ['.']
 		}
-	},
-	publicDir: 'public'
+	}
 });
