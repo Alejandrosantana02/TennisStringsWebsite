@@ -5,7 +5,7 @@ export const GET: RequestHandler = () => {
 	const robots = `User-agent: *
 Allow: /
 
-Sitemap: ${siteUrl}/sitemap.xml`;
+Sitemap: ${siteUrl}/sitemap.xml`; // Updated domain
 
 	return new Response(robots, {
 		headers: {
