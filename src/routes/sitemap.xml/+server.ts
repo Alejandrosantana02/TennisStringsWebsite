@@ -2,7 +2,7 @@ import type { RequestHandler } from './$types';
 import { loadStringReviews, loadMachineReviews, loadArticles } from '$lib/utils/content';
 
 export const GET: RequestHandler = async () => {
-	const siteUrl = 'https://tennisstrings.com'; // Update with actual domain
+	const siteUrl = 'https://tennisstringguide.com'; // Update with actual domain
 	const [strings, machines, articles] = await Promise.all([
 		loadStringReviews(),
 		loadMachineReviews(),
