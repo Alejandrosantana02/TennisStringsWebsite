@@ -10,7 +10,7 @@
 	export let placeholder: string = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect fill="%23ddd" width="400" height="300"/%3E%3C/svg%3E';
 	export let sizes: string | undefined = undefined;
 
-	let imageLoaded: boolean = false;
+	let imageLoaded: boolean = true; // Start as loaded to show images immediately
 	let imageError: boolean = false;
 	let imageElement: HTMLImageElement | undefined;
 
@@ -30,11 +30,10 @@
 			return 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkRldiBNb2RlPC90ZXh0Pjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiM5OTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIxLjhlbSI+SW1hZ2VzIG5vdCBhdmFpbGFibGUgaW4gZGV2ZWxvcG1lbnQ8L3RleHQ+PC9zdmc+';
 		}
 
-		// For now, return original src
-		// TODO: Implement Cloudflare Images integration if needed
-		// Example: https://yourdomain.com/cdn-cgi/image/format=webp,quality=80/{originalSrc}
+		// For WebP images, ensure they're served correctly
 		return originalSrc;
 	}
+
 
 	$: optimizedSrc = getOptimizedSrc(src);
 </script>
@@ -44,7 +43,7 @@
 		<img
 			src={placeholder}
 			alt=""
-			class="absolute inset-0 w-full h-full object-cover blur-sm"
+			class="absolute inset-0 w-full h-full object-cover blur-sm transition-opacity duration-300 {imageLoaded ? 'opacity-0' : 'opacity-100'}"
 			aria-hidden="true"
 		/>
 	{/if}
@@ -57,7 +56,7 @@
 		height={height}
 		loading={loading}
 		decoding="async"
-		class="transition-opacity duration-300 {imageLoaded ? 'opacity-100' : 'opacity-0'} {className}"
+		class="transition-opacity duration-300 opacity-100 {className}"
 		sizes={sizes}
 		on:load={handleLoad}
 		on:error={handleError}
