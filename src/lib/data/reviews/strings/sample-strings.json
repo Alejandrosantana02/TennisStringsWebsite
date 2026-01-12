@@ -60,7 +60,7 @@
 		},
 		"price": 18.99,
 		"affiliateLinks": {
-			"amazon": "amazon.com/Wilson-NXT-40-Feet-String-Natural/dp/B00GKQGKZM",
+			"amazon": "https://www.amazon.com/Wilson-NXT-40-Feet-String-Natural/dp/B00GKQGKZM",
 			"tennisWarehouse": "https://www.tennis-warehouse.com/Wilson_Duo_Power_ALU_Power_125__NXT_Power_16_String/descpageACWILSON-DUOPALUNXT.html"
 		},
 		"content": {
