@@ -23,7 +23,7 @@
 	}
 </script>
 
-<article class="container mx-auto px-4 py-8">
+<article class="max-w-5xl mx-auto px-4 py-8">
 	<!-- Hero Section -->
 	<div class="hero bg-base-200 rounded-lg mb-8">
 		<div class="hero-content flex-col lg:flex-row gap-8">
@@ -68,7 +68,7 @@
 	</div>
 
 	<!-- Rating Breakdown -->
-	<div class="card bg-base-100 shadow-xl mb-8">
+	<div class="card bg-base-100 shadow-xl mb-8 overflow-hidden">
 		<div class="card-body">
 			<h2 class="card-title mb-4">Rating Breakdown</h2>
 			<div class="space-y-4">
@@ -79,11 +79,13 @@
 							{review.ratings.stiffness}/10 - {getRatingLabel(review.ratings.stiffness)}
 						</span>
 					</div>
-					<progress
-						class="progress progress-primary w-full"
-						value={review.ratings.stiffness}
-						max="10"
-					></progress>
+					<div class="w-full overflow-hidden">
+						<progress
+							class="progress progress-primary w-full"
+							value={review.ratings.stiffness}
+							max="10"
+						></progress>
+					</div>
 				</div>
 				<div>
 					<div class="flex justify-between mb-1">
@@ -92,11 +94,13 @@
 							{review.ratings.power}/10 - {getRatingLabel(review.ratings.power)}
 						</span>
 					</div>
-					<progress
-						class="progress progress-info w-full"
-						value={review.ratings.power}
-						max="10"
-					></progress>
+					<div class="w-full overflow-hidden">
+						<progress
+							class="progress progress-info w-full"
+							value={review.ratings.power}
+							max="10"
+						></progress>
+					</div>
 				</div>
 				<div>
 					<div class="flex justify-between mb-1">
@@ -105,11 +109,13 @@
 							{review.ratings.spin}/10 - {getRatingLabel(review.ratings.spin)}
 						</span>
 					</div>
-					<progress
-						class="progress progress-success w-full"
-						value={review.ratings.spin}
-						max="10"
-					></progress>
+					<div class="w-full overflow-hidden">
+						<progress
+							class="progress progress-success w-full"
+							value={review.ratings.spin}
+							max="10"
+						></progress>
+					</div>
 				</div>
 				<div>
 					<div class="flex justify-between mb-1">
@@ -118,11 +124,13 @@
 							{review.ratings.durability}/10 - {getRatingLabel(review.ratings.durability)}
 						</span>
 					</div>
-					<progress
-						class="progress progress-warning w-full"
-						value={review.ratings.durability}
-						max="10"
-					></progress>
+					<div class="w-full overflow-hidden">
+						<progress
+							class="progress progress-warning w-full"
+							value={review.ratings.durability}
+							max="10"
+						></progress>
+					</div>
 				</div>
 				<div>
 					<div class="flex justify-between mb-1">
@@ -131,11 +139,13 @@
 							{review.ratings.comfort}/10 - {getRatingLabel(review.ratings.comfort)}
 						</span>
 					</div>
-					<progress
-						class="progress progress-error w-full"
-						value={review.ratings.comfort}
-						max="10"
-					></progress>
+					<div class="w-full overflow-hidden">
+						<progress
+							class="progress progress-error w-full"
+							value={review.ratings.comfort}
+							max="10"
+						></progress>
+					</div>
 				</div>
 			</div>
 		</div>

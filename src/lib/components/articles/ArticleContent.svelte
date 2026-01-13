@@ -55,7 +55,7 @@
 	}
 </script>
 
-<article class="container mx-auto px-4 py-8">
+<article class="max-w-6xl mx-auto px-4 py-8">
 	<!-- Header -->
 	<div class="mb-6 sm:mb-8">
 		<div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4">

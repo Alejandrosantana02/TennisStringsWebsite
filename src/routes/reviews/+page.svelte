@@ -25,7 +25,7 @@
 	/>
 </svelte:head>
 
-<div class="container mx-auto px-4 py-6 sm:py-8">
+<div class="max-w-7xl mx-auto px-4 py-6 sm:py-8">
 	<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 gap-4">
 		<h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold">Tennis String Reviews</h1>
 		<div class="flex gap-2 w-full sm:w-auto">

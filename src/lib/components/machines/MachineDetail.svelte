@@ -8,7 +8,7 @@
 	export let machine: StringingMachine;
 </script>
 
-<article class="container mx-auto px-4 py-8">
+<article class="max-w-5xl mx-auto px-4 py-8">
 	<!-- Hero Section -->
 	<div class="hero bg-base-200 rounded-lg mb-8">
 		<div class="hero-content flex-col lg:flex-row gap-8">
