@@ -33,16 +33,29 @@ function getAffiliateConfig(): AffiliateConfig {
 	};
 }
 
+// Validate URL format and handle missing protocol
+export function validateAndFormatUrl(url: string): string | null {
+	if (!url || typeof url !== 'string') return null;
+	
+	let formattedUrl = url.trim();
+	if (!formattedUrl.startsWith('http://') && !formattedUrl.startsWith('https://')) {
+		formattedUrl = 'https://' + formattedUrl;
+	}
+
+	try {
+		const urlObj = new URL(formattedUrl);
+		if (['http:', 'https:'].includes(urlObj.protocol)) {
+			return formattedUrl;
+		}
+		return null;
+	} catch {
+		return null;
+	}
+}
+
 // Validate URL format
 export function validateAffiliateLink(url: string): boolean {
-	if (!url || typeof url !== 'string') return false;
-	
-	try {
-		const urlObj = new URL(url);
-		return ['http:', 'https:'].includes(urlObj.protocol);
-	} catch {
-		return false;
-	}
+	return validateAndFormatUrl(url) !== null;
 }
 
 // Generate affiliate link with tracking parameters
@@ -52,13 +65,14 @@ export function generateAffiliateLink(
 	productName?: string,
 	productId?: string
 ): string {
-	if (!validateAffiliateLink(baseUrl)) {
+	const formattedBaseUrl = validateAndFormatUrl(baseUrl);
+	if (!formattedBaseUrl) {
 		console.warn(`Invalid affiliate link: ${baseUrl}`);
 		return baseUrl;
 	}
 
 	const config = getAffiliateConfig();
-	const url = new URL(baseUrl);
+	const url = new URL(formattedBaseUrl);
 
 	switch (vendor) {
 		case 'amazon': {
@@ -106,10 +120,11 @@ export function getTrackedAffiliateLink(
 
 // Check if URL is an affiliate link
 export function isAffiliateLink(url: string, vendor?: AffiliateVendor): boolean {
-	if (!validateAffiliateLink(url)) return false;
+	const formattedUrl = validateAndFormatUrl(url);
+	if (!formattedUrl) return false;
 
 	try {
-		const urlObj = new URL(url);
+		const urlObj = new URL(formattedUrl);
 		const hostname = urlObj.hostname.toLowerCase();
 
 		if (vendor) {
@@ -139,10 +154,11 @@ export function isAffiliateLink(url: string, vendor?: AffiliateVendor): boolean 
 
 // Get vendor from URL
 export function getVendorFromUrl(url: string): AffiliateVendor | null {
-	if (!validateAffiliateLink(url)) return null;
+	const formattedUrl = validateAndFormatUrl(url);
+	if (!formattedUrl) return null;
 
 	try {
-		const urlObj = new URL(url);
+		const urlObj = new URL(formattedUrl);
 		const hostname = urlObj.hostname.toLowerCase();
 
 		if (hostname.includes('amazon.com') || hostname.includes('amzn.to')) {
